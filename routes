@@ -1,0 +1,36 @@
+*********************** Routes for RestApi *************************
+====================================================================
+
+1.searchByName
+GET- http://localhost/root/RestApi-php/api/searchByName.php?name=jack
+
+2.Fetch single record
+POST-http://localhost/root/RestApi-php/api/single-student.php
+[raw]Body: {student_id:1}F
+
+3.create
+POST-http://localhost/root/RestApi-php/api/create.php
+[raw]Body: {
+			"name":"Rose Jackson",
+    		"email":"Jackson@example.com",
+	     	"mobile":"7221109888"
+	     }
+4.delete
+GET- http://localhost/root/RestApi-php/api/delete.php?students_id=12
+
+5.single-student-byGetMethod
+GET- http://localhost/root/RestApi-php/api/single-student-byGetMethod.php?students_id=5
+[Query Params] {key:students_id,value:5}
+
+6.List All
+GET - http://localhost/root/RestApi-php/api/list-all.php
+
+7.update
+POST - http://localhost/root/RestApi-php/api/update.php
+RAW->body:
+{
+    "name":"John Smith",
+    "email":"john_smith@example.com",
+    "mobile":"91021119991",
+    "students_id":5
+}
